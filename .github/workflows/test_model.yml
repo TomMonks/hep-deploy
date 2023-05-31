@@ -1,7 +1,11 @@
 # install requirements and tests with python version 3.8
 name: Test model
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
